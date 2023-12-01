@@ -4,3 +4,4 @@ import 'package:terserah_api/models/models.dart';
 
 part 'uiloading.dart';
 part 'cardprovince.dart';
+part 'cardcosts.dart';
