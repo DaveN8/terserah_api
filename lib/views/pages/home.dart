@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   dynamic selectedProvinceOrigin;
   dynamic selectedCityDestination;
   dynamic selectedProvinceDestination;
-  dynamic dropDownValue; //For Courier
+  // dynamic dropDownValue; //For Courier
   dynamic provinsiAwal;
   dynamic provinsiAkhir;
   dynamic kotaAwal;
@@ -495,8 +495,10 @@ class _HomePageState extends State<HomePage> {
                                   beratbjir.text,
                                   kurir,
                                 );
-                                ongkirReady = true;
-                                isLoading = false;
+                                setState(() {
+                                  ongkirReady = true;
+                                  isLoading = false;
+                                });
                               },
                               child: const Text(
                                 "Cek Ongkir",
